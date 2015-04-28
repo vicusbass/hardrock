@@ -1,0 +1,22 @@
+<template name="home">
+    <div class="template-home">
+        <h1 class="center-align">Salut!</h1>
+        <div class="card-panel">
+            <div class="row">
+                <div class="input-field col s12">
+                    {{> inputAutocomplete settings=settings id="artistInput" type="text" placeholder="Scrie artistul..." length="20"}}
+                </div>
+            </div>
+            <div class="row">
+                <ul>
+                    {{#each filteredSongs}}
+                    <li><a href="#">{{title}}</a></li>
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+    </div>
+</template>
+<template name="songItem">
+    <span>{{artist}}</span>
+</template>
