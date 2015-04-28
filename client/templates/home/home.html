@@ -10,7 +10,14 @@
             <div class="row">
                 <ul>
                     {{#each filteredSongs}}
-                    <li><a href="#">{{title}}</a></li>
+                    <li class="song">
+                        <div class="col s10">
+                            <a href="#">{{title}}</a>
+                        </div>
+                        <div class="col s1">
+                            <i id="iconHeart" class="small mdi-action-favorite-outline"></i>
+                        </div>
+                    </li>
                     {{/each}}
                 </ul>
             </div>

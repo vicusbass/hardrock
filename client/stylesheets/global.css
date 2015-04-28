@@ -21,6 +21,16 @@ footer.page-footer {
     background-color: #7986cb
 }
 
+li.song {
+    font-weight: bold;
+    font-size: 125%;
+}
+
+input#artistInput {
+    font-weight: bold;
+    font-size: 125%;
+}
+
 .toast {
-	background-color: #E57373
+    background-color: #E57373
 }
